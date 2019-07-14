@@ -1,0 +1,8 @@
+#ifndef TP_2019_1C_GANK_MID_SEMAPHORES_H
+#define TP_2019_1C_GANK_MID_SEMAPHORES_H
+
+pthread_mutex_t SEM_MEMTABLE;
+pthread_mutex_t SEM_MX_MAP_COMPACTACTION;
+pthread_mutex_t MX_LIST_SEM;
+
+#endif //TP_2019_1C_GANK_MID_SEMAPHORES_H
