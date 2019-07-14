@@ -1,0 +1,90 @@
+@media screen and (max-width: 800px){
+  /* .header {
+    flex-direction: column;
+  } */
+  .header .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%; */
+  }
+  .header .logo-menu{
+    flex-wrap: wrap;
+  }
+  .header .logo-menu .btn-menu svg{
+    display: inline-block;
+    color: #cb3c74;
+    width: 30px;
+    height: 30px;
+  }
+  .hero .logo-hero a img{
+    width: 100%;
+    height: 100%;
+  }
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .logo-menu .enlaces li{
+    /* height: 40px; */
+  }
+  .event{
+    width: 80%;
+  }
+  .event img{
+    width: 100%
+  }
+  .servicios-list {
+    font-size: 15px;
+  }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .datos-contacto{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .contact-form {
+    width: 90%;
+    align-items: center;
+  }
+  .contact-form input {
+    border-radius: 5px;
+    height: 40px;
+    width: inherit;
+    margin: 10px 0;
+  }
+  .contact-form textarea {
+    width: inherit;
+  }
+  .social {
+    border: none;
+    padding-left: 0;
+    height: 150px;
+  }
+  .popup-manicuria, .popup-depilacion, .popup-corte, .popup-masajes{
+    width: 80%;
+  }
+  .popup-depilacion .popup-conditions{
+      font-size: 10px;
+    }
+  .popup-manicuria .popup-conditions{
+      font-size: 10px;
+    }
+  .popup-corte .popup-conditions{
+      font-size: 10px;
+    }
+  .popup-masajes .popup-conditions{
+      font-size: 10px;
+    }
+}

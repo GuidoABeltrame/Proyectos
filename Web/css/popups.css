@@ -1,0 +1,489 @@
+/* PopUp Manicuria */
+
+.overlay-manicuria {
+  background: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.overlay-manicuria.active {
+  visibility: visible;
+}
+.popup-manicuria {
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,.3);
+  border-radius: 3px;
+  font-family: 'Montserrat',sans-serif;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+  opacity: 0;
+  transition: .5s ease all;
+  transform: scale(0.7);
+  font-weight: bold;
+}
+.popup-manicuria .popup-title {
+  background-color: #cb3c74;
+  color: white;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.popup-manicuria h3{
+  text-transform: uppercase;
+  text-decoration: underline;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+.popup-manicuria table {
+  margin: auto;
+  border-collapse: collapse;
+  opacity: 0;
+}
+.popup-manicuria table th {
+  height: 15px;
+  border-right: none;
+  border-left: none;
+}
+.popup-manicuria table td {
+  text-align: left;
+  padding: 0 10px;
+  height: 25px;
+}
+.popup-manicuria .popup-conditions {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: left;
+  opacity: 0;
+}
+.popup-manicuria .popup-conditions p {
+  margin: 0;
+  padding: 0;
+}
+.popup-manicuria .btn-cerrar-popup-manicuria {
+  font-size: 25px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #BBBBBB;
+  transition: .3s ease all;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.popup-manicuria .btn-cerrar-popup-manicuria:hover {
+  color: #000;
+}
+/* Animaciones */
+.popup-manicuria.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.popup-manicuria.active .popup-title h3 {
+  animation: entradaTitulo .8s ease .5s forwards;
+  /*Forwards hace que el elemento quede seteado con la animacion y no
+  vuelva a su estado inicial*/
+}
+.popup-manicuria.active table {
+  animation: entradaTabla 1s ease 1s forwards;
+}
+.popup-manicuria.active .popup-conditions {
+  animation: entradaConditions 1s ease 1s forwards;
+}
+@keyframes entradaTabla {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes entradaTitulo {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+@keyframes entradaConditions {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* PopUp Cortes y Peninados */
+.overlay-corte {
+  background: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.overlay-corte.active {
+  visibility: visible;
+}
+.popup-corte {
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,.3);
+  border-radius: 3px;
+  font-family: 'Montserrat',sans-serif;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+  opacity: 0;
+  transition: .5s ease all;
+  transform: scale(0.7);
+  font-weight: bold;
+}
+.popup-corte .popup-title {
+  background-color: #cb3c74;
+  color: white;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.popup-corte h3{
+  text-transform: uppercase;
+  text-decoration: underline;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+.popup-corte table {
+  margin: auto;
+  border-collapse: collapse;
+  opacity: 0;
+}
+.popup-corte table th {
+  height: 15px;
+  border-right: none;
+  border-left: none;
+}
+.popup-corte table td {
+  text-align: left;
+  padding: 0 10px;
+  height: 25px;
+}
+.popup-corte .popup-conditions {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  opacity: 0;
+}
+.popup-corte .popup-conditions p {
+  margin: 0;
+  padding: 0;
+}
+.popup-corte .btn-cerrar-popup-corte {
+  font-size: 25px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #BBBBBB;
+  transition: .3s ease all;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.popup-corte .btn-cerrar-popup-corte:hover {
+  color: #000;
+}
+/* Animaciones */
+.popup-corte.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.popup-corte.active .popup-title h3 {
+  animation: entradaTitulo .8s ease .5s forwards;
+  /*Forwards hace que el elemento quede seteado con la animacion y no
+  vuelva a su estado inicial*/
+}
+.popup-corte.active table {
+  animation: entradaTabla 1s ease 1s forwards;
+}
+.popup-corte.active .popup-conditions {
+  animation: entradaConditions 1s ease 1s forwards;
+}
+@keyframes entradaTabla {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes entradaTitulo {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+@keyframes entradaConditions {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* PopUp Depilacion */
+.overlay-depilacion {
+  background: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.overlay-depilacion.active {
+  visibility: visible;
+}
+.popup-depilacion {
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,.3);
+  border-radius: 3px;
+  font-family: 'Montserrat',sans-serif;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+  opacity: 0;
+  transition: .5s ease all;
+  transform: scale(0.7);
+  font-weight: bold;
+}
+.popup-depilacion .popup-title {
+  background-color: #cb3c74;
+  color: white;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.popup-depilacion h3{
+  text-transform: uppercase;
+  text-decoration: underline;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+.popup-depilacion table {
+  margin: auto;
+  border-collapse: collapse;
+  opacity: 0;
+}
+.popup-depilacion table th {
+  height: 15px;
+  border-right: none;
+  border-left: none;
+}
+.popup-depilacion table td {
+  text-align: left;
+  padding: 0 10px;
+  height: 25px;
+}
+.popup-depilacion .popup-conditions {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  opacity: 0;
+}
+.popup-depilacion .popup-conditions p {
+  margin: 0;
+  padding: 0;
+}
+.popup-depilacion .btn-cerrar-popup-depilacion {
+  font-size: 25px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #BBBBBB;
+  transition: .3s ease all;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.popup-depilacion .btn-cerrar-popup-depilacion:hover {
+  color: #000;
+}
+/* Animaciones */
+.popup-depilacion.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.popup-depilacion.active .popup-title h3 {
+  animation: entradaTitulo .8s ease .5s forwards;
+  /*Forwards hace que el elemento quede seteado con la animacion y no
+  vuelva a su estado inicial*/
+}
+.popup-depilacion.active table {
+  animation: entradaTabla 1s ease 1s forwards;
+}
+.popup-depilacion.active .popup-conditions {
+  animation: entradaConditions 1s ease 1s forwards;
+}
+@keyframes entradaTabla {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes entradaTitulo {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+@keyframes entradaConditions {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* PopUp Masajes */
+.overlay-masajes {
+  background: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.overlay-masajes.active {
+  visibility: visible;
+}
+.popup-masajes {
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,.3);
+  border-radius: 3px;
+  font-family: 'Montserrat',sans-serif;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+  opacity: 0;
+  transition: .5s ease all;
+  transform: scale(0.7);
+  font-weight: bold;
+}
+.popup-masajes .popup-title {
+  background-color: #cb3c74;
+  color: white;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.popup-masajes h3{
+  text-transform: uppercase;
+  text-decoration: underline;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+.popup-masajes table {
+  margin: auto;
+  border-collapse: collapse;
+  opacity: 0;
+}
+.popup-masajes table th {
+  height: 15px;
+  border-right: none;
+  border-left: none;
+}
+.popup-masajes table td {
+  text-align: left;
+  padding: 0 10px;
+  height: 25px;
+}
+.popup-masajes .popup-conditions {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  opacity: 0;
+}
+.popup-masajes .popup-conditions p {
+  margin: 0;
+  padding: 0;
+}
+.popup-masajes .btn-cerrar-popup-masajes {
+  font-size: 30px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #BBBBBB;
+  transition: .3s ease all;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.popup-masajes .btn-cerrar-popup-masajes:hover {
+  color: #000;
+}
+/* Animaciones */
+.popup-masajes.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.popup-masajes.active .popup-title h3 {
+  animation: entradaTitulo .8s ease .5s forwards;
+  /*Forwards hace que el elemento quede seteado con la animacion y no
+  vuelva a su estado inicial*/
+}
+.popup-masajes.active table {
+  animation: entradaTabla 1s ease 1s forwards;
+}
+.popup-masajes.active .popup-conditions {
+  animation: entradaConditions 1s ease 1s forwards;
+}
+@keyframes entradaTabla {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes entradaTitulo {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+@keyframes entradaConditions {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

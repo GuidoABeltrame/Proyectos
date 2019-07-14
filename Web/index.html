@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Carolina Procopio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesAheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/popups.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animaciones.css">
+  <link rel="stylesheet" href="css/headroom.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="logo-menu">
+    <figure class="logo">
+      <a href="#Home"><img class="logo-img" src="images/logo.png" alt=""></a>
+    </figure>
+    <a href="#" class="btn-menu" id="btn-menu"><i class="icono fas fa-bars"></i></a>
+    <ol class="enlaces" id="enlaces">
+      <li><a href="#">Home</a></li>
+      <li><a href="#event">Servicios</a></li>
+      <li><a href="#Promociones">Promos</a></li>
+      <li><a href="#Galeria">Galeria</a></li>
+      <li><a href="#Contacto">Contacto</a></li>
+    </ol>
+  </div>
+  <div class="hr">
+    <hr>
+  </div>
+  </header>
+  <section class="hero">
+    <div class="logo-hero">
+      <a href="#Home"><img src="images/logo-hero2.png" alt=""></a>
+    </div>
+  </section>
+  <section id="event" class="event-list">
+    <div class="container">
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="images/corte.jpg" />
+        </figure>
+        <div class="event-detail">
+          <h1 class="event-title">Cortes y Peinados</h1>
+          <div class="servicios-list">
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Corte Unisex</p>
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Color</p>
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Peinados</p>
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Extensiones</p>
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Alisados</p>
+          </div>
+          <a class="event-url" id="btn-abrir-popup-cortes">Ver Precios</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" width="500" height="300" src="images/manicura.jpg" />
+        </figure>
+        <div class="event-detail">
+          <h1 class="event-title">Manicuría y Pedicuría</h1>
+          <div class="servicios-list">
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Belleza de Pies</p>
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Uñas esculpidas - Acrilica</p>
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Uñas esculpidas - Gel</p>
+          </div>
+          <a class="event-url" id="btn-abrir-popup-manicuria">Ver Precios</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" width="500" height="300" src="images/depilacion.jpg" />
+        </figure>
+        <div class="event-detail">
+          <h1 class="event-title">Depilación</h1>
+          <div class="servicios-list">
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Pierna Entera</p>
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Pierna Entera c/ bikini</p>
+            <p><img src="images/circle-solid.svg" alt="">Bikini</p>
+            <p><img src="images/circle-solid.svg" alt="">Axila</p>
+            <!-- <p><img src="images/circle-solid.svg" alt="">Bozo</p> -->
+          </div>
+          <a class="event-url" id="btn-abrir-popup-depilacion">Ver Precios</a>
+        </div>
+      </article>
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" width="500" height="300" src="images/masajes.jpg" />
+        </figure>
+        <div class="event-detail">
+          <h1 class="event-title">Masajes</h1>
+          <div class="servicios-list">
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Descontracturante</p>
+            <p><img src="images/circle-solid.svg" fill="orange" alt="">Linfatico</p>
+            <p><img src="images/circle-solid.svg" alt="">Reductor</p>
+          </div>
+          <a class="event-url" id="btn-abrir-popup-masajes">Ver Precios</a>
+        </div>
+    </div>
+    </article>
+  </section>
+  <!-- SECCION POPUPS PARA PRECIOS -->
+  <div class="overlay-manicuria" id="overlay-manicuria">
+    <div class="popup-manicuria" id="popup-manicuria">
+      <a id="btn-cerrar-popup-manicuria" class="btn-cerrar-popup-manicuria"><i class="fas fa-times"></i></a>
+      <div class="popup-title">
+        <h3>Manicuría y Pedicuría</h3>
+      </div>
+      <table class="popup-precios-manicuria" id="popup-precios-manicuria">
+        <tbody>
+          <tr>
+            <td>Uñas Esculpidas en Gel</td>
+            <td>$1200</td>
+          </tr>
+          <tr>
+            <td>Uñas Esculpidas en Acrilico</td>
+            <td>$1100</td>
+          </tr>
+          <tr>
+            <td>Belleza de Manos y Pedicuria</td>
+            <td>$700</td>
+          </tr>
+          <tr>
+            <td>Belleza de Manos y Pies</td>
+            <td>$700</td>
+          </tr>
+          <tr>
+            <td>Pedicuria</td>
+            <td>$680</td>
+          </tr>
+          <tr>
+            <td>Belleza de Pies</td>
+            <td>$580</td>
+          </tr>
+          <tr>
+            <td>Belleza de Manos</td>
+            <td>$330</td>
+          </tr>
+          <tr>
+            <td>Esmaltado permanente</td>
+            <td>$780</td>
+          </tr>
+          <tr>
+            <td>Parafina</td>
+            <td>$250</td>
+          </tr>
+          <tr>
+            <td>Cambio de Esmalte</td>
+            <td>$200</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <ul class="popup-conditions">
+        <li>
+          <p>Todos los precios, y la disponibilidad, pueden estar sujetos a modificaciones sin previo aviso.</p>
+        </li>
+        <li>
+          <p>Listado de precios vigentes a partir de 1 de Diciembre de 2018.</p>
+        </li>
+        <li>
+          <p>Todas las tarjetas de Crédito y Débito.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="overlay-masajes" id="overlay-masajes">
+    <div class="popup-masajes" id="popup-masajes">
+      <a id="btn-cerrar-popup-masajes" class="btn-cerrar-popup-masajes"><i class="fas fa-times"></i></a>
+      <div class="popup-title">
+        <h3>Masajes</h3>
+      </div>
+      <table class="popup-precios-masajes" id="popup-precios-masajes">
+        <tbody>
+          <tr>
+            <td>Descontracturante</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Linfatico</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Reductor</td>
+            <td>$1000</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <ul class="popup-conditions">
+        <li>
+          <p>Todos los precios, y la disponibilidad, pueden estar sujetos a modificaciones sin previo aviso.</p>
+        </li>
+        <li>
+          <p>Listado de precios vigentes a partir de 1 de Diciembre de 2018.</p>
+        </li>
+        <li>
+          <p>Todas las tarjetas de Crédito y Débito.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="overlay-corte" id="overlay-corte">
+    <div class="popup-corte" id="popup-corte">
+      <a id="btn-cerrar-popup-corte" class="btn-cerrar-popup-corte"><i class="fas fa-times"></i></a>
+      <div class="popup-title">
+        <h3>Cortes y Peinados</h3>
+      </div>
+      <table class="popup-precios-cortes" id="popup-precios-cortes">
+        <tbody>
+          <tr>
+            <td>Corte Unisex</td>
+            <td>$350</td>
+          </tr>
+          <tr>
+            <td>Aplicacion de Color desde</td>
+            <td>$480</td>
+          </tr>
+          <tr>
+            <td>Color desde</td>
+            <td>$790</td>
+          </tr>
+          <tr>
+            <td>Brushing desde</td>
+            <td>$350</td>
+          </tr>
+          <tr>
+            <td>Brushing con planchita desde</td>
+            <td>$400</td>
+          </tr>
+          <tr>
+            <td>Alisados desde</td>
+            <td>$1500</td>
+          </tr>
+          <tr>
+            <td>Reflejos desde</td>
+            <td>$1200</td>
+          </tr>
+          <tr>
+            <td>Desgastado de Puntas desde</td>
+            <td>$900</td>
+          </tr>
+          <tr>
+            <td>Planchita</td>
+            <td>$300</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <ul class="popup-conditions">
+        <li>
+          <p>Todos los precios, y la disponibilidad, pueden estar sujetos a modificaciones sin previo aviso.</p>
+        </li>
+        <li>
+          <p>Listado de precios vigentes a partir de 1 de Diciembre de 2018.</p>
+        </li>
+        <li>
+          <p>Todas las tarjetas de Crédito y Débito.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="overlay-depilacion" id="overlay-depilacion">
+    <div class="popup-depilacion" id="popup-depilacion">
+      <a id="btn-cerrar-popup-depilacion" class="btn-cerrar-popup-depilacion"><i class="fas fa-times"></i></a>
+      <div class="popup-title">
+        <h3>Depilacion</h3>
+      </div>
+      <table class="popup-precios-depilacion" id="popup-precios-depilacion">
+        <tbody>
+          <tr>
+            <td>Media Pierna</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Media Pierna c/ bikini</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Pierna Entera</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>Pierna Entera c/ bikini</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>Bikini</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>Axila</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>Bozo</td>
+            <td>$1000</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <ul class="popup-conditions">
+        <li>
+          <p>Todos los precios, y la disponibilidad, pueden estar sujetos a modificaciones sin previo aviso.</p>
+        </li>
+        <li>
+          <p>Listado de precios vigentes a partir de 1 de Diciembre de 2018.</p>
+        </li>
+        <li>
+          <p>Todas las tarjetas de Crédito y Débito.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- FIN SECCION DE POPUPS PRECIOS -->
+  <section id="Promociones" class="promociones">
+    <div class="promo1">
+      <h1>20% OFF <br><small>Pagando en efectivo</small></h1>
+    </div>
+    <div class="promo2">
+      <h1>Voucher de Manos <br><small>4 Servicios + 1 Gratis</small></h1>
+    </div>
+  </section>
+  <section class="turnos">
+    <a href="https://www.wonoma.com/salon/carolina-procopio" target="_blank">
+      <h1>Solicita un Turno</h1>
+      <i class="icon-turno far fa-calendar-alt"></i>
+    </a>
+  </section>
+  <section id="Contacto" class="contacto">
+    <div class="form-asesoramiento">
+      <h1>Solicita asesoramiento</h1>
+    </div>
+    <div class="datos-contacto">
+      <form class="contact-form" id="contact-form" method="post" action="sendemail.php" target="">
+        <input type="text" name='nombre' placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="telefono" placeholder="Telefono" required>
+        <textarea name="msg" rows="8" cols="40" placeholder="Mensaje" required></textarea>
+        <input type="submit" name='enviar' id="btn-enviar" value="Enviar">
+        <p>Mail Enviado Exitosamente</p>
+      </form>
+      <div class="contact-info">
+        <div class="contact-row">
+          <i class="icon-wts fab fa-whatsapp"></i>
+          113062-2006 / 2196-1735 / 5433-9406
+        </div>
+        <div class="contact-row">
+          <i class="icon-mrk fas fa-map-marker-alt"></i>
+          Juan de Garay 2892, Olivos
+        </div>
+        <div class="contact-row">
+          <i class="icon-nvp far fa-envelope"></i>
+          caro.procopio@hotmail.com
+        </div>
+        <div class="contact-row">
+          <i class="icon-att fas fa-clock"></i>
+          Martes a Sabados 09:30 a 20:00 hs.
+        </div>
+      </div>
+      <div class="social">
+        <div>
+          <h3>Seguinos</h3>
+        </div>
+        <div>
+          <a class="link-face" href="https://www.facebook.com/carolina.procopio.79" target="_blank"><i class="icon-face fab fa-facebook-f"></i></a>
+          <a class="link-inst" href="https://www.instagram.com/spacarolinaprocopio" target="_blank"><i class="icon-inst fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="mapa">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.722622504056!2d-58.49547278523674!3d-34.509915680483935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb13e7435d933%3A0x4c0d69c34b5f66bd!2sCarolina+Procopio!5e0!3m2!1ses-419!2sar!4v1552354699504"
+      width="100%" height="255" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <footer class="footer">
+
+  </footer>
+  <script src="js/popup.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/headroom.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+</body>
+
+</html>
