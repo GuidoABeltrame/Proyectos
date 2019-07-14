@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formularios</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Formularios</h1>
+    </header>
+    <div class="container">
+      <h1>Formulario Validado</h1>
+      <hr>
+      <form name="formulario" class="form" action="index.html" method="post">
+        <label for="nombre">Ingrese Su nombre</label>
+        <input type="text" name="nombre" placeholder="Nombre">
+        <label for="direccion">Ingrese Su Direccion</label>
+        <input type="text" name="direccion" placeholder="Direccion">
+        <label for="mail">Ingrese su Email</label>
+        <input type="Email" name="mail" value="" placeholder="Email">
+      <hr>
+        <div class="checks">
+          <label for="sexo">Hombre</label>
+          <input class="radio" type="radio" name="sexo" value="Hombre">
+          <label for="sexo">Mujer</label>
+          <input class="radio" type="radio" name="sexo" value="Mujer">
+          <label for="terminos">Terminos y Condiciones</label>
+          <input class="check"  type="checkbox" name="terminos" value="">
+        </div>
+      <hr>
+        <input class="btn-enviar" type="submit" name="" value="Enviar">
+      </form>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

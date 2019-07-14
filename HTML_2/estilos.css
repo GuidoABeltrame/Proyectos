@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #8b1254;
+  width: 90%;
+  height: 30%;
+  margin: auto;
+}
+
+nav ul li {
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  overflow: hidden;
+  }
+
+section {
+    height: 60%;
+    background-color: #f17e66;
+    width: 90%;
+    margin: auto;
+  }
+
+  footer {
+    width: 90%;
+    height: 10;
+    margin: auto;
+    background-color: #064255;
+    color: #fff;
+  }
+
+  header nav ul li:hover {
+    background-color: #fff;
+  }

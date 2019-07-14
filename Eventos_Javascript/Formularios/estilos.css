@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background-color: #343843;
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 100px;
+  color: white;
+}
+.container{
+  border: 1px solid #343843;
+  width: 30%;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container h1{
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  background-color: #343843;
+  color: white;
+}
+.container hr{
+  width: 100%;
+  height: 1px;
+  border: 1px;
+  background-color: #ff5437;
+  border-color:  #ff5437;
+}
+.container form hr{
+  margin: 20px 0;
+  width: 100%;
+}
+.container form {
+  margin-bottom: 20px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.container form label{
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.container form input{
+  border-radius: 5px;
+  height: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container form .checks{
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  width: 70%;
+  flex-wrap: wrap;
+}
+.container form .checks .radio{
+  margin: 10px 0;
+  width: 15px;
+}
+.container form .checks .check{
+  width: 15px;
+}
+.btn-enviar{
+  border: 0;
+  border-radius: 5px;
+  margin: 10px 0;
+  height: 30px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #343843;
+  color: white;
+}
+.btn-enviar:hover{
+  background-color: #ff5437;
+  color: white;
+}

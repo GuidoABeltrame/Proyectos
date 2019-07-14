@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat con Socket.io y Node</title>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <h1>Chat con Socket.io y Node</h1>
+    <div id="messages"></div>
+    <form onsubmit="return addMessage(this);">
+      <input type="text" id="nickname" placeholder="Nick">
+      <textarea id="text" placeholder="Mensaje.." rows="8" cols="80"></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
